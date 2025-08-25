@@ -1,0 +1,64 @@
+.hero {
+  padding-block: 56px 80px;
+}
+
+.title {
+  margin-bottom: 56px;
+}
+
+.bg__1 {
+  background: url(../../../../../assets/images/hero/hero1.png);
+}
+
+.bg__2 {
+  background: url(../../../../../assets/images/hero/hero2.png);
+}
+
+.bg__3 {
+  background: url(../../../../../assets/images/hero/hero3.png);
+}
+
+.bg {
+  margin: 0 auto;
+  width: 90%;
+  height: 400px;
+}
+
+.prev {
+  position: absolute;
+  height: 100%;
+  width: 32px;
+  border: 1px solid #b4bdc3;
+  background: #fff;
+  color: #fff;
+  left: 13px;
+  top: 0;
+}
+
+.next {
+  position: absolute;
+  height: 100%;
+  width: 32px;
+  border: 1px solid #b4bdc3;
+  background: #fff;
+  color: #fff;
+  right: 13px;
+  top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 640px) {
+  .bg__1 {
+    background: url(../../../../../assets/images/hero/hero-mini-1.png);
+  }
+
+  .bg__2 {
+    background: url(../../../../../assets/images/hero/hero-mini-2.png);
+  }
+
+  .bg__3 {
+    background: url(../../../../../assets/images/hero/hero-mini-3.png);
+  }
+}

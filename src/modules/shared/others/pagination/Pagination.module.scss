@@ -1,0 +1,19 @@
+.pagination {
+  @include flex-c;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.page__link {
+  padding: 12px;
+  display: block;
+  border: 1px solid $light-gray;
+  width: 32px;
+  height: 32px;
+  @include flex-c;
+}
+
+.active {
+  background: $primery-color;
+  color: $white-color;
+}

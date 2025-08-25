@@ -1,0 +1,67 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  @include flex-b;
+  box-shadow: 0px 1px 0px 0px #e2e6e9;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.wrapper {
+  @include flex-c;
+}
+
+.logo {
+  display: block;
+  padding: 18px 24px;
+}
+
+.list {
+  @include flex-c;
+  gap: 64px;
+  margin-left: 24px;
+}
+
+.list li a {
+  font-family: Mont;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 11px;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  color: $secondary-color;
+  padding-block: 26.5px;
+}
+
+.list li a:hover {
+  color: $primery-color;
+  border-bottom: 3px solid $primery-color;
+}
+
+.header .buttons a {
+  padding: 24px;
+  box-shadow: -1px 0px 0px 0px #e2e6e9;
+  background: #fff;
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 640px) {
+  .list {
+    display: none;
+  }
+  .buttons {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    padding: 16px;
+  }
+}

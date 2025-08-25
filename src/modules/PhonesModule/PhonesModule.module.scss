@@ -1,0 +1,56 @@
+.phonesPage {
+  padding-bottom: 80px;
+}
+
+.list {
+  width: fit-content;
+  @include flex-b;
+  gap: 8px;
+}
+
+.nav {
+  padding-block: 25px 40px;
+}
+
+.models {
+  font-family: Mont;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  color: $secondary-color;
+  margin-bottom: 40px;
+}
+
+.properties {
+  @include flex-c;
+  justify-content: start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.properties {
+  & p {
+    font-family: Mont;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: $secondary-color;
+    margin-bottom: 4px;
+  }
+  & select {
+    padding: 10px 12px;
+    border: 1px solid $middle-gray;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.block {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 40px;
+}

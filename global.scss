@@ -1,0 +1,94 @@
+$primery-color: #313237;
+$middle-gray: #b4bdc3;
+$secondary-color: #89939a;
+$light-gray: #e2e6e9;
+$primery-color: #313237;
+$white-color: #ffffff;
+$red-color: #eb5757;
+
+@font-face {
+  font-family: 'Mont';
+  src: url(fonts/mont/Mont-ExtraLightDEMO.otf);
+}
+
+@font-face {
+  font-family: 'Mont-heavy';
+  src: url(fonts/mont/Mont-HeavyDEMO.otf);
+}
+
+@mixin flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-b {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Mont', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: $primery-color;
+}
+
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.section__title {
+  font-family: 'Mont-heavy';
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: -1%;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-family: Mont-heavy;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -1%;
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    padding-inline: 10px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+}

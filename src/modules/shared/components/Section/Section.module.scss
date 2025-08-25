@@ -1,0 +1,28 @@
+.brand {
+  padding-bottom: 80px;
+}
+
+.content {
+  @include flex-b;
+}
+
+.prev__btn {
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border: 1px solid $middle-gray;
+  margin-right: 16px;
+}
+
+.next__btn {
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border: 1px solid $middle-gray;
+}
+
+.buttons {
+  @include flex-c;
+}

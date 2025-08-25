@@ -1,0 +1,44 @@
+.bullet {
+  height: 80px;
+  width: 80px;
+  & img {
+    height: 100%;
+  }
+}
+
+.activeBullet {
+  background-color: #fff;
+}
+
+.pagination {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  width: 80px !important;
+  align-items: center !important;
+}
+
+.swiper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center !important;
+}
+
+.slide {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.swiperWrapper {
+  width: calc(100% - 80px - 16px);
+}
+
+.bulletImage {
+  height: 80px;
+  width: 80px;
+}
+
+.image {
+  width: fit-content;
+  height: fit-content;
+}
